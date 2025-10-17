@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coverage &amp; Availability — FiberFlow Romblon</title>
+    <meta name="description" content="See where FiberFlow is live today and join the waitlist for upcoming barangays across Tablas Island." />
+    <meta name="keywords" content="FiberFlow coverage, Romblon fiber availability, Tablas Island internet" />
+    <meta property="og:title" content="FiberFlow Coverage Map" />
+    <meta property="og:description" content="Live in San Andres to Panique DC. Odiongan next. Submit your address to join the waitlist." />
+    <meta property="og:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fiberflow.com.ph/coverage" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FiberFlow Coverage" />
+    <meta name="twitter:description" content="Check availability on Tablas Island and request installation." />
+    <meta name="twitter:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/Images/fiberflow-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../Assets/css/styles.css" />
+    <link rel="prefetch" href="/Public/get-connected.html" />
+    <script>
+        window.fiberflowTracking = {
+            gaId: 'G-XXXXXXXXXX',
+            metaPixelId: '000000000000000'
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="/index.html">
+                <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow Technologies Inc." width="160" height="42" decoding="async" />
+            </a>
+            <div class="nav-links">
+                <a href="/Public/plans.html">Plans &amp; Pricing</a>
+                <a href="/Public/coverage.html" aria-current="page">Coverage</a>
+                <a href="/Public/get-connected.html">Get Connected</a>
+                <a href="/Public/support.html">Support 24/7</a>
+                <a href="/Public/news.html">News</a>
+                <a class="btn-nav" href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Pay Bill</a>
+                <a class="btn-pill" href="/Public/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge-pill badge-on-dark">Coverage &amp; Availability</span>
+                <h1>Lighting up Tablas Island in phases</h1>
+                <p>San Andres down to Panique DC (Odiongan) is live today. Odiongan is next. Submit your address to join the waitlist and we’ll update you as we expand.</p>
+                <div class="meta">
+                    <span>Backbone: Calatrava CLS → Panique DC</span>
+                    <span>Status posts tagged “Status” on News</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Live now</h3>
+                        <p>San Andres to Panique DC (Odiongan). Same-week installs with 100&nbsp;Gbps backbone capacity.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Next</h3>
+                        <p>Odiongan in pre-marketing. Register today to secure a survey slot once fiber drops land.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Backbone</h3>
+                        <p>Calatrava CLS → Panique DC → OLT access. Redundant island rings in design for future resiliency.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Address Checker</span>
+                    <h2>Join the waitlist or book an install</h2>
+                    <p>Quick form creates a PHPNuxBill prospect, alerts Sales/CSR via Telegram/email, and assigns the installer closest to your barangay.</p>
+                </div>
+                <form id="coverageForm" class="card form-grid" novalidate>
+                    <div>
+                        <label for="coverage-name">Full Name *</label>
+                        <input id="coverage-name" name="name" type="text" placeholder="Juan Dela Cruz" required />
+                    </div>
+                    <div>
+                        <label for="coverage-municipality">Municipality *</label>
+                        <select id="coverage-municipality" name="municipality" required>
+                            <option value="" disabled selected>Select municipality</option>
+                            <option>San Andres</option>
+                            <option>Odiongan</option>
+                            <option>Calatrava</option>
+                            <option>San Agustin</option>
+                            <option>Santa Maria</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="coverage-barangay">Barangay *</label>
+                        <input id="coverage-barangay" name="barangay" type="text" placeholder="Barangay" required />
+                    </div>
+                    <div>
+                        <label for="coverage-address">Exact Install Address / Pin *</label>
+                        <textarea id="coverage-address" name="address" rows="3" placeholder="House number, street, barangay, pin" required></textarea>
+                    </div>
+                    <div>
+                        <label for="coverage-contact">Contact (FB link + Mobile) *</label>
+                        <textarea id="coverage-contact" name="contact" rows="2" placeholder="https://facebook.com/you · 09XX-XXX-XXXX" required></textarea>
+                    </div>
+                    <div>
+                        <label for="coverage-plan">Preferred Plan *</label>
+                        <select id="coverage-plan" name="plan" required>
+                            <option value="" disabled selected>Select a plan</option>
+                            <option value="Isla 100">Isla 100</option>
+                            <option value="Isla Plus 200">Isla Plus 200</option>
+                            <option value="Isla Pro 300">Isla Pro 300</option>
+                            <option value="Isla Max 500">Isla Max 500</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="coverage-drop">Estimated Drop Length</label>
+                        <input id="coverage-drop" name="dropLength" type="text" placeholder="e.g., 180 m" />
+                    </div>
+                    <div>
+                        <label for="coverage-call">Best time to call</label>
+                        <input id="coverage-call" name="callWindow" type="text" placeholder="Weekdays 3–6 PM" />
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit coverage request</button>
+                    <p class="form-footnote" data-response role="status" aria-live="polite"></p>
+                </form>
+                <div class="notice" style="margin-top:1.5rem;">
+                    Need a quicker ping? Use the quick coverage form at the top of the homepage for a mobile-friendly version.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow" width="160" height="40" loading="lazy" decoding="async" />
+                    <p>Fiber-pure internet for Tablas Island powered by Romblon’s only submarine cable.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/Public/plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="/Public/coverage.html">Coverage</a></li>
+                        <li><a href="/Public/get-connected.html">Get Connected</a></li>
+                        <li><a href="/Public/support.html">Support 24/7</a></li>
+                        <li><a href="/Public/news.html">News &amp; Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="/Public/terms.html">Terms of Service</a></li>
+                        <li><a href="/Public/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>FiberFlow Technologies Inc.<br />Sitio Tabing Dagat, Panique, Odiongan, Romblon</li>
+                        <li><a href="https://m.me/fiberflow" target="_blank" rel="noopener">Facebook Messenger</a></li>
+                        <li><a href="sms:+63-000-000-0000">SMS Hotline</a></li>
+                        <li><a href="mailto:privacy@fiberflow.com.ph">privacy@fiberflow.com.ph</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-current-year>2025</span> FiberFlow Technologies Inc.</span>
+                <span><a href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Billing Portal</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-cta" aria-hidden="true">
+        <a class="btn btn-primary" href="/Public/get-connected.html">Get Connected</a>
+    </div>
+
+    <div class="consent-banner hidden" role="dialog" aria-live="polite" aria-label="Analytics consent">
+        <h2>Cookies &amp; analytics</h2>
+        <p>We use Google Analytics 4 and Meta Pixel to understand performance. Approve to help us improve. You can opt out anytime.</p>
+        <div class="consent-actions">
+            <button class="btn btn-light" type="button" data-consent-action="accept">Accept</button>
+            <button class="btn btn-outline" type="button" data-consent-action="decline">Decline</button>
+        </div>
+    </div>
+
+    <script src="../Assets/js/main.js" defer></script>
+</body>
+</html>

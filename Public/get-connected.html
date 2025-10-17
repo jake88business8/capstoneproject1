@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Connected — FiberFlow Installation Request</title>
+    <meta name="description" content="Submit your FiberFlow application. We’ll create a NuxBill prospect, alert our sales team, and assign the nearest installer." />
+    <meta name="keywords" content="FiberFlow installation, Romblon fiber application, Tablas internet" />
+    <meta property="og:title" content="Get Connected with FiberFlow" />
+    <meta property="og:description" content="Send your details and we’ll verify coverage, create a PHPNuxBill prospect, and book your installer." />
+    <meta property="og:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fiberflow.com.ph/get-connected" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Get Connected — FiberFlow" />
+    <meta name="twitter:description" content="We’ll verify coverage and schedule survey/install for your FiberFlow connection." />
+    <meta name="twitter:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/Images/fiberflow-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../Assets/css/styles.css" />
+    <link rel="prefetch" href="/Public/plans.html" />
+    <link rel="prefetch" href="/Public/coverage.html" />
+    <script>
+        window.fiberflowTracking = {
+            gaId: 'G-XXXXXXXXXX',
+            metaPixelId: '000000000000000'
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="/index.html">
+                <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow Technologies Inc." width="160" height="42" decoding="async" />
+            </a>
+            <div class="nav-links">
+                <a href="/Public/plans.html">Plans &amp; Pricing</a>
+                <a href="/Public/coverage.html">Coverage</a>
+                <a href="/Public/get-connected.html" aria-current="page">Get Connected</a>
+                <a href="/Public/support.html">Support 24/7</a>
+                <a href="/Public/news.html">News</a>
+                <a class="btn-nav" href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Pay Bill</a>
+                <a class="btn-pill" href="/Public/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge-pill badge-on-dark">Get Connected</span>
+                <h1>Your path to fiber starts here</h1>
+                <p>Submit the form or message us 24/7. We’ll verify coverage, create a PHPNuxBill prospect, alert Sales/CSR, and assign the nearest installer.</p>
+                <div class="meta">
+                    <span>Automation: NuxBill Prospect + Telegram &amp; Email alerts</span>
+                    <span>Installer dispatch: Nearest area crew</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="steps">
+                    <div class="step">
+                        <h3>Submit the form or message us 24/7</h3>
+                        <p>Use the lead form below, Facebook Messenger, or SMS. Our hotline is monitored round-the-clock.</p>
+                    </div>
+                    <div class="step">
+                        <h3>We verify coverage and book a survey/install</h3>
+                        <p>We map your address, check port availability, and confirm the drop length before booking.</p>
+                    </div>
+                    <div class="step">
+                        <h3>On-site test, apply plan, and go live</h3>
+                        <p>The installer performs on-site certification, applies your chosen plan, and walks you through the billing portal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Lead Form</span>
+                    <h2>Tell us about your home or business</h2>
+                    <p>We respond within the day. Automation creates a PHPNuxBill prospect, notifies Sales/CSR, and assigns an installer based on location.</p>
+                </div>
+                <form id="getConnectedForm" class="card form-grid" novalidate>
+                    <div>
+                        <label for="name">Full Name *</label>
+                        <input id="name" name="name" type="text" placeholder="Juan Dela Cruz" required />
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile *</label>
+                        <input id="mobile" name="mobile" type="tel" inputmode="tel" placeholder="09XX-XXX-XXXX" required />
+                    </div>
+                    <div>
+                        <label for="facebook">Facebook Profile Link *</label>
+                        <input id="facebook" name="facebook" type="url" placeholder="https://facebook.com/yourprofile" required />
+                    </div>
+                    <div>
+                        <label for="email">Email (optional)</label>
+                        <input id="email" name="email" type="email" placeholder="you@email.com" />
+                    </div>
+                    <div>
+                        <label for="municipality">Municipality *</label>
+                        <select id="municipality" name="municipality" required>
+                            <option value="" disabled selected>Select municipality</option>
+                            <option>San Andres</option>
+                            <option>Odiongan</option>
+                            <option>Calatrava</option>
+                            <option>San Agustin</option>
+                            <option>Santa Maria</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="barangay">Barangay *</label>
+                        <input id="barangay" name="barangay" type="text" placeholder="Barangay" required />
+                    </div>
+                    <div>
+                        <label for="address">Full Address / Pin *</label>
+                        <textarea id="address" name="address" rows="3" placeholder="House number, street, barangay, coordinates" required></textarea>
+                    </div>
+                    <div>
+                        <label for="plan">Preferred Plan *</label>
+                        <select id="plan" name="plan" required>
+                            <option value="" disabled selected>Select a plan</option>
+                            <option value="Isla 100">Isla 100</option>
+                            <option value="Isla Plus 200">Isla Plus 200</option>
+                            <option value="Isla Pro 300">Isla Pro 300</option>
+                            <option value="Isla Max 500">Isla Max 500</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dropLength">Estimated Drop Length</label>
+                        <input id="dropLength" name="dropLength" type="text" placeholder="e.g., 150 m" />
+                    </div>
+                    <div>
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Landmarks, best time to call, gate instructions"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit application</button>
+                    <p class="form-footnote" data-response role="status" aria-live="polite"></p>
+                </form>
+                <div class="notice" style="margin-top:1.5rem;">
+                    Prefer Messenger or SMS? Message us at <a href="https://m.me/fiberflow" target="_blank" rel="noopener">facebook.com/fiberflow</a> or text <a href="sms:+63-000-000-0000">+63&nbsp;000&nbsp;000&nbsp;0000</a> anytime.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow" width="160" height="40" loading="lazy" decoding="async" />
+                    <p>Fiber-pure internet for Tablas Island powered by Romblon’s only submarine cable.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/Public/plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="/Public/coverage.html">Coverage</a></li>
+                        <li><a href="/Public/get-connected.html">Get Connected</a></li>
+                        <li><a href="/Public/support.html">Support 24/7</a></li>
+                        <li><a href="/Public/news.html">News &amp; Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="/Public/terms.html">Terms of Service</a></li>
+                        <li><a href="/Public/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>FiberFlow Technologies Inc.<br />Sitio Tabing Dagat, Panique, Odiongan, Romblon</li>
+                        <li><a href="https://m.me/fiberflow" target="_blank" rel="noopener">Facebook Messenger</a></li>
+                        <li><a href="sms:+63-000-000-0000">SMS Hotline</a></li>
+                        <li><a href="mailto:privacy@fiberflow.com.ph">privacy@fiberflow.com.ph</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-current-year>2025</span> FiberFlow Technologies Inc.</span>
+                <span><a href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Billing Portal</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-cta" aria-hidden="true">
+        <a class="btn btn-primary" href="/Public/plans.html">See Plans</a>
+    </div>
+
+    <div class="consent-banner hidden" role="dialog" aria-live="polite" aria-label="Analytics consent">
+        <h2>Cookies &amp; analytics</h2>
+        <p>We use Google Analytics 4 and Meta Pixel to understand performance. Approve to help us improve. You can opt out anytime.</p>
+        <div class="consent-actions">
+            <button class="btn btn-light" type="button" data-consent-action="accept">Accept</button>
+            <button class="btn btn-outline" type="button" data-consent-action="decline">Decline</button>
+        </div>
+    </div>
+
+    <script src="../Assets/js/main.js" defer></script>
+</body>
+</html>
