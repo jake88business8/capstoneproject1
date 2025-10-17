@@ -1,0 +1,13 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="14" y1="6" x2="118" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f9bff" />
+      <stop offset="1" stop-color="#007bff" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="40" height="44" rx="14" fill="url(#grad)" />
+  <rect x="42" y="20" width="18" height="10" rx="5" fill="#0f172a" />
+  <rect x="42" y="34" width="18" height="10" rx="5" fill="#0f172a" />
+  <text x="70" y="38" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="22" fill="#0f172a">FiberFlow</text>
+  <circle cx="184" cy="32" r="6" fill="#2f9bff" />
+</svg>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support 24/7 — FiberFlow Help Center</title>
+    <meta name="description" content="Reach FiberFlow support via Messenger, SMS, or support tickets. View FAQs and submit troubleshooting details." />
+    <meta name="keywords" content="FiberFlow support, Romblon internet help, fiber outage Tablas" />
+    <meta property="og:title" content="FiberFlow Support 24/7" />
+    <meta property="og:description" content="Log a ticket, chat on Facebook, or SMS the FiberFlow team anytime." />
+    <meta property="og:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fiberflow.com.ph/support" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FiberFlow Support" />
+    <meta name="twitter:description" content="Direct line to FiberFlow’s Romblon-based support team." />
+    <meta name="twitter:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/Images/fiberflow-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../Assets/css/styles.css" />
+    <link rel="prefetch" href="/Public/news.html" />
+    <script>
+        window.fiberflowTracking = {
+            gaId: 'G-XXXXXXXXXX',
+            metaPixelId: '000000000000000'
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="/index.html">
+                <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow Technologies Inc." width="160" height="42" decoding="async" />
+            </a>
+            <div class="nav-links">
+                <a href="/Public/plans.html">Plans &amp; Pricing</a>
+                <a href="/Public/coverage.html">Coverage</a>
+                <a href="/Public/get-connected.html">Get Connected</a>
+                <a href="/Public/support.html" aria-current="page">Support 24/7</a>
+                <a href="/Public/news.html">News</a>
+                <a class="btn-nav" href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Pay Bill</a>
+                <a class="btn-pill" href="/Public/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge-pill badge-on-dark">Support 24/7</span>
+                <h1>Local experts, awake when you are</h1>
+                <p>Message us anytime on Facebook or SMS. Need a ticket? Use the form below—we’ll auto-assign priority, send an acknowledgement with ETA, and keep you posted via status link.</p>
+                <div class="meta">
+                    <span>Messenger: <a href="https://m.me/fiberflow" target="_blank" rel="noopener" style="color:#fff;">m.me/fiberflow</a></span>
+                    <span>SMS: <a href="sms:+63-000-000-0000" style="color:#fff;">+63&nbsp;000&nbsp;000&nbsp;0000</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">FAQs</span>
+                    <h2>Common questions</h2>
+                    <p>Quick answers to billing, troubleshooting, and account requests. Full details live inside the ticket autoresponse and Terms of Service.</p>
+                </div>
+                <div class="faq">
+                    <div class="faq-item">
+                        <h3>When is billing due?</h3>
+                        <p>Billing cycles follow your activation date. Reminders go out via SMS and email 5 days before due date.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do I pay?</h3>
+                        <p>Pay via billing.fiberflow.com.ph using Xendit—GCash, Maya, cards, or OTC partners. Keep your account number ready.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How should I run a speed test?</h3>
+                        <p>Use a wired LAN connection direct to the ONU. Disconnect VPNs and pause heavy downloads for the most accurate result.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Gaming and CGNAT?</h3>
+                        <p>Residential plans use CGNAT. Request for dedicated IP options via ticket so we can propose alternatives.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Relocation or early disconnect?</h3>
+                        <p>No lock-in. For disconnect within 24 paid months, allow FiberFlow to retrieve the ONU and drop within 7 days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Support Ticket Lite</span>
+                    <h2>Log an issue with attachments</h2>
+                    <p>Tickets auto-assign priority. Expect an autoresponse with ETA and a link to follow status updates. Upload photos/videos to help our NOC diagnose quickly.</p>
+                </div>
+                <form id="supportTicketForm" class="card form-grid" novalidate>
+                    <div>
+                        <label for="support-name">Name *</label>
+                        <input id="support-name" name="name" type="text" placeholder="Juan Dela Cruz" required />
+                    </div>
+                    <div>
+                        <label for="support-account">Account No. (if any)</label>
+                        <input id="support-account" name="account" type="text" placeholder="FF-000000" />
+                    </div>
+                    <div>
+                        <label for="support-mobile">Mobile *</label>
+                        <input id="support-mobile" name="mobile" type="tel" inputmode="tel" placeholder="09XX-XXX-XXXX" required />
+                    </div>
+                    <div>
+                        <label for="support-category">Issue Category *</label>
+                        <select id="support-category" name="category" required>
+                            <option value="" disabled selected>Select category</option>
+                            <option value="No connection">No connection</option>
+                            <option value="Slow speed">Slow speed</option>
+                            <option value="Billing concern">Billing concern</option>
+                            <option value="Relocation">Relocation</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="support-description">Description *</label>
+                        <textarea id="support-description" name="description" rows="4" placeholder="Describe the issue, speed test results, affected devices" required></textarea>
+                    </div>
+                    <div>
+                        <label for="support-media">Upload photo/video</label>
+                        <input id="support-media" name="media" type="file" accept="image/*,video/*" />
+                        <p class="form-footnote">Optional. Max 10&nbsp;MB. Larger files? Share via Messenger or Google Drive link.</p>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit ticket</button>
+                    <p class="form-footnote" data-response role="status" aria-live="polite"></p>
+                </form>
+                <div class="notice" style="margin-top:1.5rem;">
+                    Outage in your barangay? Check the <a href="/Public/news.html">News &amp; Updates</a> page for posts tagged <strong>Status</strong>.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow" width="160" height="40" loading="lazy" decoding="async" />
+                    <p>Fiber-pure internet for Tablas Island powered by Romblon’s only submarine cable.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/Public/plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="/Public/coverage.html">Coverage</a></li>
+                        <li><a href="/Public/get-connected.html">Get Connected</a></li>
+                        <li><a href="/Public/support.html">Support 24/7</a></li>
+                        <li><a href="/Public/news.html">News &amp; Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="/Public/terms.html">Terms of Service</a></li>
+                        <li><a href="/Public/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>FiberFlow Technologies Inc.<br />Sitio Tabing Dagat, Panique, Odiongan, Romblon</li>
+                        <li><a href="https://m.me/fiberflow" target="_blank" rel="noopener">Facebook Messenger</a></li>
+                        <li><a href="sms:+63-000-000-0000">SMS Hotline</a></li>
+                        <li><a href="mailto:privacy@fiberflow.com.ph">privacy@fiberflow.com.ph</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-current-year>2025</span> FiberFlow Technologies Inc.</span>
+                <span><a href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Billing Portal</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-cta" aria-hidden="true">
+        <a class="btn btn-primary" href="https://m.me/fiberflow" target="_blank" rel="noopener">Chat on Messenger</a>
+    </div>
+
+    <div class="consent-banner hidden" role="dialog" aria-live="polite" aria-label="Analytics consent">
+        <h2>Cookies &amp; analytics</h2>
+        <p>We use Google Analytics 4 and Meta Pixel to understand performance. Approve to help us improve. You can opt out anytime.</p>
+        <div class="consent-actions">
+            <button class="btn btn-light" type="button" data-consent-action="accept">Accept</button>
+            <button class="btn btn-outline" type="button" data-consent-action="decline">Decline</button>
+        </div>
+    </div>
+
+    <script src="../Assets/js/main.js" defer></script>
+</body>
+</html>
