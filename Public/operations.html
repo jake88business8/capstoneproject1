@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Operations Suite for phpNuxBill | FiberFlow</title>
+    <meta name="description" content="Plan NAP capacity, reconcile finances, and control inventory inside the enhanced FiberFlow phpNuxBill operations suite." />
+    <meta name="keywords" content="phpnuxbill nap management, isp accounting, inventory job order" />
+    <meta property="og:title" content="Operations Suite for phpNuxBill" />
+    <meta property="og:description" content="Track Romblon NAP boxes, automate BIR-ready reports, and monitor stock tied to job orders." />
+    <meta property="og:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fiberflow.com.ph/operations" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Operations Suite for phpNuxBill" />
+    <meta name="twitter:description" content="NAP mapping, finance dashboards, and inventory linked to job orders in one workflow." />
+    <meta name="twitter:image" content="https://fiberflow.com.ph/Assets/Images/fiberflow-hero-panique.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/Images/fiberflow-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../Assets/css/styles.css" />
+    <link rel="prefetch" href="/Public/get-connected.html" />
+    <script>
+        window.fiberflowTracking = {
+            gaId: 'G-XXXXXXXXXX',
+            metaPixelId: '000000000000000'
+        };
+    </script>
+</head>
+<body data-page="operations">
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="/index.html">
+                <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow Technologies Inc." width="160" height="42" decoding="async" />
+            </a>
+            <div class="nav-links">
+                <a href="/Public/plans.html">Plans &amp; Pricing</a>
+                <a href="/Public/coverage.html">Coverage</a>
+                <a href="/Public/operations.html" aria-current="page">Operations Suite</a>
+                <a href="/Public/get-connected.html">Get Connected</a>
+                <a href="/Public/support.html">Support 24/7</a>
+                <a href="/Public/news.html">News</a>
+                <a class="btn-nav" href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Pay Bill</a>
+                <a class="btn-pill" href="/Public/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero operations-hero">
+            <div class="container">
+                <span class="badge-pill badge-on-dark">Network Operations</span>
+                <h1>Enhanced phpNuxBill operations suite</h1>
+                <p>Control every fiber deployment touchpoint inside FiberFlow’s upgraded phpNuxBill experience—NAP capacity maps, BIR-ready finance reports, and installer-driven inventory workflows.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#nap-management"><span>See NAP Management</span></a>
+                    <a class="btn btn-outline" href="#finance"><span>Review Financials</span></a>
+                    <a class="btn btn-light" href="#inventory"><span>Manage Inventory</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="nap-management">
+            <div class="container module-grid">
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="badge">NAP Management</span>
+                        <h2>Map every NAP box with live port utilisation</h2>
+                        <p>Track municipality, barangay, LCP and PON assignments while keeping an eye on remaining ports. Filter by service area or availability before dispatching installers.</p>
+                    </div>
+                    <div class="module-toolbar">
+                        <label>
+                            <span>Municipality</span>
+                            <select data-nap-filter="municipality">
+                                <option value="all">All</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Status</span>
+                            <select data-nap-filter="status">
+                                <option value="all">All</option>
+                                <option value="available">With available ports</option>
+                                <option value="full">Fully utilised</option>
+                                <option value="maintenance">Under maintenance</option>
+                            </select>
+                        </label>
+                        <label class="search">
+                            <span>Search</span>
+                            <input type="search" placeholder="Search NAP, barangay or code" data-nap-filter="search" />
+                        </label>
+                    </div>
+                    <div class="stat-cards" role="status">
+                        <article class="stat-card">
+                            <span>Total NAPs</span>
+                            <strong data-nap-total>0</strong>
+                        </article>
+                        <article class="stat-card">
+                            <span>Ports Available</span>
+                            <strong data-nap-available>0</strong>
+                        </article>
+                        <article class="stat-card">
+                            <span>Average Utilisation</span>
+                            <strong data-nap-utilisation>0%</strong>
+                        </article>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="data-table" data-nap-table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">NAP</th>
+                                    <th scope="col">Municipality</th>
+                                    <th scope="col">Barangay</th>
+                                    <th scope="col">PON No.</th>
+                                    <th scope="col">LCP No.</th>
+                                    <th scope="col">Ports</th>
+                                    <th scope="col">Available</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <aside class="module-card compact" aria-label="Customer advanced fields">
+                    <div class="module-header">
+                        <span class="badge">Customer records</span>
+                        <h3>Advanced install information</h3>
+                        <p>Capture last-mile assignments alongside the customer profile for rapid troubleshooting.</p>
+                    </div>
+                    <dl class="customer-fields" data-customer-fields>
+                        <div>
+                            <dt>Customer</dt>
+                            <dd data-customer-name>—</dd>
+                        </div>
+                        <div>
+                            <dt>PON No.</dt>
+                            <dd data-customer-pon>—</dd>
+                        </div>
+                        <div>
+                            <dt>LCP No.</dt>
+                            <dd data-customer-lcp>—</dd>
+                        </div>
+                        <div>
+                            <dt>NAP No.</dt>
+                            <dd data-customer-nap>—</dd>
+                        </div>
+                        <div>
+                            <dt>Port No.</dt>
+                            <dd data-customer-port>—</dd>
+                        </div>
+                    </dl>
+                    <p class="helper">Select any NAP row to preview how records surface within phpNuxBill’s customer advanced information pane.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="finance">
+            <div class="container module-grid">
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="badge">Accounting &amp; Finance</span>
+                        <h2>BIR-ready financial dashboard</h2>
+                        <p>Monitor revenue, expenses, VAT and cash exposure in one ledger. Export monthly reports that align with BIR bookkeeping requirements.</p>
+                    </div>
+                    <div class="tablist" role="tablist" aria-label="Financial views">
+                        <button type="button" role="tab" aria-selected="true" data-report-tab="sales">Sales</button>
+                        <button type="button" role="tab" aria-selected="false" data-report-tab="expenses">Expenses</button>
+                        <button type="button" role="tab" aria-selected="false" data-report-tab="taxes">Taxes</button>
+                        <button type="button" role="tab" aria-selected="false" data-report-tab="cash">Cash Flow</button>
+                    </div>
+                    <div class="stat-cards" data-report-summary></div>
+                    <div class="table-wrapper">
+                        <table class="data-table" data-report-table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Reference</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col" class="numeric">Amount (PHP)</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="module-footer">
+                        <button class="btn btn-dark" type="button">Export for BIR</button>
+                        <p>Generates a consolidated PDF and CSV for sales, input/output VAT, and withholding summaries.</p>
+                    </div>
+                </div>
+                <aside class="module-card compact" aria-label="Accounts insights">
+                    <div class="module-header">
+                        <span class="badge">Accounts tracking</span>
+                        <h3>Receivables vs payables</h3>
+                        <p>Review outstanding balances before they hit ageing risk.</p>
+                    </div>
+                    <ul class="balance-list" data-balance-list></ul>
+                    <p class="helper">Totals update automatically as transactions are posted inside phpNuxBill’s billing and accounting modules.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="inventory">
+            <div class="container module-grid">
+                <div class="module-card">
+                    <div class="module-header">
+                        <span class="badge">Inventory &amp; Job Orders</span>
+                        <h2>Track supplies linked to installer dispatches</h2>
+                        <p>Manage ONU, drop cables, patch cords and consumables with automatic deductions once a job order is closed.</p>
+                    </div>
+                    <div class="stat-cards">
+                        <article class="stat-card">
+                            <span>Items in stock</span>
+                            <strong data-stock-count>0</strong>
+                        </article>
+                        <article class="stat-card">
+                            <span>Critical levels</span>
+                            <strong data-critical-count>0</strong>
+                        </article>
+                        <article class="stat-card">
+                            <span>Open job orders</span>
+                            <strong data-open-orders>0</strong>
+                        </article>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="data-table" data-inventory-table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col" class="numeric">In Stock</th>
+                                    <th scope="col" class="numeric">Reserved</th>
+                                    <th scope="col" class="numeric">Available</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <aside class="module-card compact" aria-label="Job order builder">
+                    <div class="module-header">
+                        <span class="badge">Job order</span>
+                        <h3>Create installer kit</h3>
+                        <p>Assign materials and capture consumption while staying within stock limits.</p>
+                    </div>
+                    <form id="jobOrderForm" class="job-order-form">
+                        <label>
+                            <span>Job order title</span>
+                            <input type="text" name="title" placeholder="e.g., Install – Odiongan Poblacion" required />
+                        </label>
+                        <label>
+                            <span>Schedule</span>
+                            <input type="date" name="schedule" required />
+                        </label>
+                        <label>
+                            <span>Assigned team</span>
+                            <select name="team" required>
+                                <option value="">Select team</option>
+                                <option>Team Alpha</option>
+                                <option>Team Bravo</option>
+                                <option>Team Charlie</option>
+                            </select>
+                        </label>
+                        <fieldset>
+                            <legend>Consumables</legend>
+                            <div class="job-order-items" data-job-items></div>
+                        </fieldset>
+                        <div class="job-order-summary" data-job-summary>
+                            <strong>No items selected yet.</strong>
+                        </div>
+                        <button class="btn btn-primary" type="submit"><span>Reserve inventory</span></button>
+                        <p class="helper" data-joborder-response>Stock is deducted once installers acknowledge receipt in the mobile app.</p>
+                    </form>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <img src="../Assets/Images/fiberflow-logo.svg" alt="FiberFlow" width="160" height="40" loading="lazy" decoding="async" />
+                    <p>Fiber-pure internet for Tablas Island powered by Romblon’s only submarine cable.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/Public/plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="/Public/coverage.html">Coverage</a></li>
+                        <li><a href="/Public/operations.html">Operations Suite</a></li>
+                        <li><a href="/Public/get-connected.html">Get Connected</a></li>
+                        <li><a href="/Public/support.html">Support 24/7</a></li>
+                        <li><a href="/Public/news.html">News &amp; Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="/Public/terms.html">Terms of Service</a></li>
+                        <li><a href="/Public/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>FiberFlow Technologies Inc.<br />Sitio Tabing Dagat, Panique, Odiongan, Romblon</li>
+                        <li><a href="https://m.me/fiberflow" target="_blank" rel="noopener">Facebook Messenger</a></li>
+                        <li><a href="sms:+63-000-000-0000">SMS Hotline</a></li>
+                        <li><a href="mailto:privacy@fiberflow.com.ph">privacy@fiberflow.com.ph</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-current-year>2025</span> FiberFlow Technologies Inc.</span>
+                <span><a href="https://billing.fiberflow.com.ph" target="_blank" rel="noopener">Billing Portal</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-cta" aria-hidden="true">
+        <a class="btn btn-primary" href="/Public/get-connected.html">Get Connected</a>
+    </div>
+
+    <div class="consent-banner hidden" role="dialog" aria-live="polite" aria-label="Analytics consent">
+        <h2>Cookies &amp; analytics</h2>
+        <p>We use Google Analytics 4 and Meta Pixel to understand performance. Approve to help us improve. You can opt out anytime.</p>
+        <div class="consent-actions">
+            <button class="btn btn-light" type="button" data-consent-action="accept">Accept</button>
+            <button class="btn btn-outline" type="button" data-consent-action="decline">Decline</button>
+        </div>
+    </div>
+
+    <script src="../Assets/js/main.js" defer></script>
+</body>
+</html>
